@@ -1,21 +1,17 @@
 # Verilog Project
 
-A minimal Verilog project using Icarus Verilog for simulation.
+## Overview
 
-## Layout
+This project is a simple Verilog-based hardware design and simulation workspace for learning digital logic implementation and verification.
 
-- `src/` — synthesizable RTL
-- `tb/` — simulation testbenches
-- `build/` — generated simulation files and waveforms
+It provides a minimal environment for writing HDL code, running simulations, and viewing waveform results during development.
 
-## Commands
+## Makefile
 
 ```sh
-make          # compile and run the self-checking testbench
-make interactive # enter commands to control the simulated counter
-make wave     # simulate and open GTKWave if it is installed
-make clean    # remove generated files
+make list
+make xor_gate
+make run FILE=xor_gate
+make wave FILE=xor_gate
+make clean
 ```
-
-The example design is a parameterized synchronous counter with asynchronous,
-active-low reset and an enable input.
