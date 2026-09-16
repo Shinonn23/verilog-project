@@ -1,3 +1,5 @@
+// Y = \overline{S}D_0 + SD_1
+
 module mux_2to1 (
     output wire mux_out,
     input  wire din_0,
